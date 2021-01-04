@@ -17,12 +17,6 @@ def extract_from_csv(path_csv):
 
     return date, order, volume, price
 
-def fill_doc(doc, context):
-    import pdb; pdb.set_trace()
-    doc = DocxTemplate(doc)
-    context = context
-    doc.render(context)
-    doc.save("output/generated_doc.docx")
 
 
 @click.command()
